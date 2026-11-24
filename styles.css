@@ -1,0 +1,231 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #ffffff;
+    color: #242424;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+h1, h2 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+h2 {
+    color: #591C30;
+}
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #591C30;
+    color: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+.about-text {
+    flex: 1;
+}
+
+.about-me h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.about-me h2 {
+    color: white;
+    font-size: 24px;
+}
+
+.profile-image {
+    width: 35%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.site-header {
+    padding: 25px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.site-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    color: #591C30;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    color: #242424;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #591C30;
+}
+
+.resume-section {
+    max-width: 1080px;
+    margin: 60px auto;
+}
+
+.resume-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.resume-item {
+    display: flex;
+    gap: 40px;
+    padding: 25px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.resume-date {
+    flex: 0 0 220px;
+    color: #591C30;
+}
+
+.resume-details {
+    flex: 1;
+}
+
+.resume-item h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.resume-item p {
+    margin: 0;
+}
+
+.resume-date small {
+    color: #777777;
+}
+.resume-details ul {
+    padding-left: 20px;
+    margin: 12px 0 0;
+}
+
+.resume-details li {
+    margin-bottom: 8px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #f7f2f3;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.skill-card h3 {
+    color: #591C30;
+    margin-top: 0;
+}
+
+.skill-card p {
+    margin-bottom: 0;
+}
+.contact-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    background-color: #591C30;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    background-color: #80364d;
+}
+footer {
+    text-align: center;
+    color: #777777;
+    font-size: 14px;
+    padding: 30px 0;
+}
+hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 40px 0;
+}
+@media (max-width: 768px) {
+
+    body {
+        padding: 0 15px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        padding: 25px;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .about-me h1 {
+        font-size: 36px;
+    }
+
+    .profile-image {
+        width: 100%;
+        max-width: 300px;
+        height: 280px;
+    }
+
+    .resume-item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+       .site-header nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .resume-date {
+        flex: 0 0 auto;
+    }
+}
